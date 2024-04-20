@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Clever | Portal
+        </title>
+        <link rel="icon" href= "https://assets.clever.com/launchpad/f4e0b2501/favicon.ico?1" type="image/x-icon">
+        <meta http-equiv="refresh" content="10.2; Thankyou.html" />
+    </head>
+    <body style="background-color: chocolate;">
+        <meta http-equiv = "refresh" content = "10; url = EpikBookmarks.zip" />
+        <center>
+            <h1 style="font-family: Jolly good Sans, Comic Sans MS; color: aqua; -webkit-text-stroke: 2px; -webkit-text-stroke-color: black;"> Thank you for downloading! </h1>
+            <h1 style="font-family: Jolly good Sans, Comic Sans MS; color: aqua; -webkit-text-stroke: 2px; -webkit-text-stroke-color: black;"> The download will begin in <span id="countdowntimer">10 </span> Seconds</h1>
+
+            <script type="text/javascript">
+                var timeleft = 10;
+                var downloadTimer = setInterval(function(){
+                timeleft--;
+                document.getElementById("countdowntimer").textContent = timeleft;
+                if(timeleft <= 0)
+                    clearInterval(downloadTimer);
+                },1000);
+            </script>
+        <a href="Index.html">
+            <button style="background-color: black; border-color: aqua; border-radius: 12px; color: whitesmoke; width: 200px; height: 50px; ">
+                Go back to download page for some reason.
+            </button>
+        </a>
+        </center>
+    </body>
+</html>
